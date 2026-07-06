@@ -1,7 +1,12 @@
 # Week 3	Store embeddings in ChromaDB, search for similar chunks
 # Vector databases, similarity search
 # Methods: add_documents(chunks, embeddings), search(query_embedding, top_k=3)
+# This is a vector store module that can be imported into other scripts
+# use embeddings from embedder.py to add documents and search for similar chunks
+
 import chromadb
+import importlib_resources
+importlib_resources.files("chromadb").joinpath("config.yaml")
 
 client = chromadb.Client()
 collection = client.get_or_create_collection("embeddings")

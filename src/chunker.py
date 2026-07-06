@@ -1,5 +1,6 @@
 # Creating a Python script that reads text files and splits them into chunks
 # File I/O, string manipulation
+# This is a Chunker module that can be imported into other scripts
 
 def split_file_into_chunks(file_path, chunk_size):
     """

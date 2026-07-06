@@ -1,5 +1,7 @@
 # Week 2	Convert chunks into "embeddings" using a free local model
 # What embeddings are, how to use Hugging Face models
+# This is a local embedding module that can be imported into other scripts
+
 import torch
 from transformers import AutoTokenizer, AutoModel
 
